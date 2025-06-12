@@ -1,0 +1,1101 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color:  #088178;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #088178;
+}
+h3 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  font-size: 12px;
+  color: #088178;
+}
+#gray {
+  color: #088178;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+/*
+
+.section-p2 {
+  margin: 40px 0;
+}
+  */
+body {
+  width: 100%;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 88px;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  height: 80px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a11;
+  transition: 0.3s ease;
+}
+#navbar li a:hover {
+  color: #088178;
+}
+#hero {
+  background-image: url("Pics/pngtree-vintage-fashion-model-exudes-timeless-elegance-and-the-allure-of-classic-png-image_15052332-removebg-preview.png");
+  height: 90vh;
+  width: 100%;
+  background-size: 50%; 
+  background-repeat: no-repeat; 
+  background-position: right center; 
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e3e6f3;
+}
+#gray {
+  color: gray;
+}
+#feature {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#hero button {
+  border: 0;
+  color: #088178;
+  cursor: pointer;
+}
+
+#feature .fa-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px 34px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#feature .fa-box:hover {
+  box-shadow: 10px 10px 54px rgb(79, 62, 221, 0.1);
+}
+#feature .fa-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+.pics img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  margin-left: 30px;
+  
+}
+#feature .fa-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+#feature .fa-box:nth-child(2) h6 {
+  background-color: #5f9ea0;
+}
+
+#feature .fa-box:nth-child(3) h6 {
+  background-color: green;
+}
+#feature .fa-box:nth-child(4) h6 {
+  background-color: #a7b3b3;
+}
+.free {
+  width: 100px;
+  height: 100px;
+}
+.order {
+  height: 100px;
+}
+
+.headd {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* يجعل العناصر في المنتصف أفقيًا */
+  justify-content: center; /* يجعل المحتوى في المنتصف عموديًا (إذا كان عنده ارتفاع كافٍ) */
+  text-align: center; /* يجعل النصوص تتوسط */
+}
+.pro {
+  width: 250px;
+  height: 400px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #cce7d0;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.pro .pro1 {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.pro-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pro-container .pro {
+  margin: 20px;
+}
+
+.starts i {
+  color: gold;
+}
+.price {
+  color: #088178;
+  position: absolute;
+}
+
+#basket {
+  background-color: #cce7d0;
+  border: 1px solid #cce7d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #088178;
+  position: absolute; /* السلة تكون absolute داخل الكارد */
+  top: 10px; /* تعديل الموضع داخل الكارد */
+  right: 10px; /* تعديل الموضع داخل الكارد */
+  z-index: 1; /* تأكد من أن السلة تظهر فوق محتويات الكارد */
+}
+
+#banner {
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  background-image: url("Pics/ss.jpg");
+  background-repeat: no-repeat;
+  background-position: center; /* لتحديد موقع الصورة في المنتصف */
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 50%; /* توسيط النص عموديًا */
+  left: 50%; /* توسيط النص أفقيًا */
+  transform: translate(-50%, -50%); /* تعويض النص تمامًا في المنتصف */
+  text-align: center;
+  color: #ffffff; /* نص أبيض ليظهر بشكل جيد على معظم الخلفيات */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل للنص */
+}
+.servies {
+  font-size: 44px;
+  color: #fddde4;
+}
+
+.had {
+  color: #088178;
+  font-size: 50px;
+}
+.haw {
+  color: gray;
+}
+
+.basketnum {
+  position: absolute;
+  top: 10px; /* تعديل الموضع داخل الكارد */
+  right: 10px;
+  z-index: 2;
+  color: gray;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.backgroundcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.background {
+  background-color: #088178;
+  margin-top: 50px;
+  background-image: url("Pics/fation\ 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  color: white;
+  padding: 20px;
+  padding-top: 60px;
+}
+.background2 {
+  background-color: #088178;
+  margin-top: 50px;
+  background-image: url("Pics/fashion\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  color: white;
+  padding: 20px;
+  padding-top: 60px;
+}
+.background3 {
+  background-color: #088178;
+  width: 94%;
+  padding: 20px;
+  background-image: url("Pics/fathion4.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+.backgroundcontainer p {
+  font-size: 20px;
+  color: white;
+}
+.background3 p {
+  color: #088178;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "spartan", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #088178;
+}
+h3 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+h4 {
+  font-size: 20px;
+  font-size: 12px;
+  color: #088178;
+}
+#gray{
+    color: #088178;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p2 {
+  margin: 40px 0;
+}
+body {
+  width: 100%;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 88px;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  height: 80px;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a11;
+  transition: 0.3s ease;
+}
+#navbar li a:hover {
+  color: #088178;
+}
+#hero {
+  background-image: url("Pics/pngtree-vintage-fashion-model-exudes-timeless-elegance-and-the-allure-of-classic-png-image_15052332-removebg-preview.png");
+  height: 90vh;
+  width: 100%;
+  background-size: 50%; /* تصغير الصورة */
+  background-repeat: no-repeat; /* عدم تكرار الصورة */
+  background-position: right center; /* تحريك الصورة لليمين */
+  padding: 0 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #e3e6f3;
+}
+#gray {
+  color: gray;
+}
+#feature {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#hero button {
+  border: 0;
+  color: #088178;
+  cursor: pointer;
+}
+
+#feature .fa-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px 34px rgb(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#feature .fa-box:hover {
+  box-shadow: 10px 10px 54px rgb(79, 62, 221, 0.1);
+}
+#feature .fa-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+}
+.pics img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+#feature .fa-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+
+#feature .fa-box:nth-child(2) h6 {
+  background-color: #5f9ea0;
+}
+
+#feature .fa-box:nth-child(3) h6 {
+  background-color: green;
+}
+#feature .fa-box:nth-child(4) h6 {
+  background-color: #a7b3b3;
+}
+.free {
+  width: 100px;
+  height: 100px;
+}
+.order {
+  height: 100px;
+}
+
+.headd {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* يجعل العناصر في المنتصف أفقيًا */
+  justify-content: center; /* يجعل المحتوى في المنتصف عموديًا (إذا كان عنده ارتفاع كافٍ) */
+  text-align: center; /* يجعل النصوص تتوسط */
+}
+.pro {
+  width: 20%;
+  min-height: 200px;
+  border-radius: 20px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+  position: relative;
+
+  transition: all 0.03 ease;
+}
+
+.pro .pro1 {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+}
+.pro-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.pro-container .pro {
+  margin: 20px;
+  position: relative;
+  
+}
+
+.starts i {
+  color: gold;
+}
+.price {
+  color: #088178;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#basket {
+  background-color: #cce7d0;
+  border: 1px solid #cce7d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: #088178;
+  position: absolute; /* السلة تكون absolute داخل الكارد */
+  top: 10px; /* تعديل الموضع داخل الكارد */
+  right: 10px; /* تعديل الموضع داخل الكارد */
+  z-index: 1; /* تأكد من أن السلة تظهر فوق محتويات الكارد */
+}
+
+#banner {
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  background-image: url("Pics/ss.jpg");
+  background-repeat: no-repeat;
+  background-position: center; /* لتحديد موقع الصورة في المنتصف */
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 50%; /* توسيط النص عموديًا */
+  left: 50%; /* توسيط النص أفقيًا */
+  transform: translate(-50%, -50%); /* تعويض النص تمامًا في المنتصف */
+  text-align: center;
+  color: #ffffff; /* نص أبيض ليظهر بشكل جيد على معظم الخلفيات */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل للنص */
+}
+.servies {
+  font-size: 44px;
+  color: #fddde4;
+}
+
+.had {
+  color: #088178;
+  font-size: 50px;
+}
+.haw {
+  color: gray;
+}
+
+
+
+.basketnum {
+  position: absolute;
+  top: 10px; /* تعديل الموضع داخل الكارد */
+  right: 10px; 
+  z-index: 2;
+  color: gray;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+
+.backgroundcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%;
+    
+    
+  }
+  
+  .background {
+    background-color: #088178;
+    margin-top: 50px;
+    background-image: url("Pics/fation\ 3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    color: white;
+    padding: 20px;
+    padding-top: 60px;
+    
+  }
+  .background2 {
+    
+    background-color: #088178;
+    margin-top: 50px;
+    background-image: url("Pics/fashion\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 400px;
+    color: white;
+    padding: 20px;
+    padding-top: 60px;
+    
+  }
+  .background3{
+    background-color: #088178;
+    width: 80%;
+    padding: 20px;
+    background-image: url("Pics/fathion4.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+
+  }
+  .backgroundcontainer p{
+    font-size: 20px;
+    color: white;
+  }
+  .background3 p{
+    color: #088178;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 60px;
+    background-color:#e3e6f3;
+    padding: 0 20px; 
+    height: 200px;
+    
+    
+  }
+  
+  .searchInput{
+    border-radius: 4px;
+    width: 200px;
+    height: 35px;
+  }
+  
+  .finaldiv{
+    
+    display: flex;
+   justify-content: space-between;
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .fir{
+    margin-left: 70px;
+
+
+  }
+  .fir img{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    padding-bottom: 20px;
+  }
+  .about{
+    width: 10px;
+    font-size: 30px;
+  }
+  .sec{
+    margin-top: 24px;
+  }
+  .aV{
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+  }
+  .aV a{
+    text-decoration: none;
+    color: #465b52;
+  }
+  .ford{
+    margin-right: 150px;
+    margin-top: 24px;
+    
+  }
+  .appstore {
+    display: flex;
+    align-items: center; /* تخليهم في نفس الخط بشكل جميل */
+    gap: 10px; /* مسافة بين الأيقونة والكلام */
+    padding: 8px;
+    border: 2px solid green;
+
+  }
+  .store-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .store-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #015c3f; /* أخضر غامق */
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .store-box:hover {
+    background-color: #e6f4ef;
+  }
+  
+  .store-box i {
+    font-size: 35px;
+    color: #015c3f;
+    margin-right: 10px;
+  }
+  
+  .store-text .small-text {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+  }
+  
+  .store-text .big-text {
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .store-box img {
+    height: 50px;
+  }
+  .payment-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .payment-icons img {
+    width: 50px;
+    height: auto;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    gap: 10px;
+  }
+  
+  .page-btn {
+    background-color: #2f8f46;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-btn:hover {
+    background-color: #256d38;
+  }
+  
+  .page-btn:active {
+    transform: scale(0.95);
+  }
+  
+ 
+  
+  .search-input:focus {
+    border-color: #007bff; 
+  }
+  
+  .search-icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-icon:hover {
+    color: #0056b3;
+  }
+.slider{
+  height: 700px;
+}
+.fire{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Noresults{
+  text-align: center;
+  align-items: center;
+}
+.pro .price{
+  position: absolute;
+  top: 310px;
+  left: 12px;
+}
+
+.pro .btn{
+  position: absolute;
+  top: 350px
+}
+.coupon{
+  display: flex;
+  align-content: space-between;
+}
+.totalPri{
+  padding:  20px ;
+  border: gray ;
+}
+/* إعدادات المودال */
+.modal {
+  display: none; /* المودال مخفي بشكل افتراضي */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* إضافة تمرير للصفحة إذا كان المحتوى كبيرًا */
+  background-color: rgba(0, 0, 0, 0.4); /* خلفية مظللة */
+}
+
+/* محتوى المودال */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* العرض يتناسب مع حجم الصفحة */
+  max-width: 500px; /* أقصى عرض للمودال */
+  border-radius: 8px;
+}
+
+/* زر إغلاق المودال */
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* تصميم الأزرار */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* تنسيق الحقول داخل النموذج */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="date"] {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+.display{
+  display: none;
+  position: relative;
+
+}
+.close-btn {
+  background-color: #f0f0f0; /* لون الدائرة رمادي فاتح */
+  color: red; /* لون علامة X */
+  border: none;
+  font-size: 16px; /* حجم الـ X أصغر */
+  width: 28px; /* عرض الزرار أصغر */
+  height: 28px; /* طول الزرار أصغر */
+  border-radius: 50%; /* دايرة كاملة */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none; /* يظهر في الموبايل بس */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 28px; /* تخلي X مظبوطة في النص */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* شادو خفيف يخلي شكلها بروفيشنال */
+  transition:  0.3s ease;;
+}
+
+#custom-btn{
+ border-radius: 40px;
+ background-color: #007bff;
+}
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -200px;  
+    padding: 10px;
+    z-index: 1000;
+    height: 100vh;
+    background-color: #e3e6f3;
+    width: 200px;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-inner img {
+    height: 250px;
+  }
+  .dissplay {
+    display: block;  
+  }
+
+  #navbar.show {
+    right: 0; 
+  }
+  
+  .finaldiv {
+    flex-direction: column; /* خلي العناصر تحت بعض */
+    align-items: center; /* حطهم في النص */
+    height: auto; /* خلي الطول اوتوماتيك حسب المحتوى */
+    padding: 20px 0;
+  }
+
+  .fir, .sec, .ford {
+    margin: 20px 0; /* مسافات بين العناصر */
+    text-align: center; /* خليه يوسطن الكلام */
+  }
+
+  .fir img {
+    margin-bottom: 10px;
+  }
+
+  .store-container {
+    flex-direction: column; /* المتجرات واحدة فوق التانية */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .store-box {
+    width: 80%; /* عرض محترم على الموبايل */
+    justify-content: center;
+  }
+
+  .payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .payment-icons img {
+    width: 50px;
+    height: auto;
+  }
+
+  .aV {
+    gap: 8px;
+  }
+
+  .aV a {
+    font-size: 16px;
+  }
+  .pro-container {
+    justify-content: center; /* تخلي الكارد في النص */
+  }
+  
+  .pro-container .pro {
+    width: 90%; /* يخلي الكارت ياخد تقريبا كل الشاشة */
+    margin: 10px 0; /* مسافة فوق وتحت بين الكروت */
+  }
+  .pro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .pro .price{
+    right: 4px;
+  }
+   .pro .btn {
+    text-align: center;
+    left: 240px;
+   }
+   .whoWeAre {
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutPic {
+    flex-direction: column;
+    align-items: center;
+}
+
+.whoWeAreP {
+    padding-left: 0;
+    text-align: center;
+}
+
+.AboutPic img {
+    width: 100%;
+    max-width: 100%;
+}
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.coupon {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.coupon input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.totalPri {
+  width: 100%;
+  max-width: none;
+}
+
+.totalPri table {
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+}
+
