@@ -1,16 +1,21 @@
 /* Base Styles and Variables */
 :root {
-  --primary-color: #2563eb;
-  --secondary-color: #f3f4f6;
-  --accent-color: #10b981;
-  --text-color: #1f2937;
-  --heading-color: #111827;
+  --primary-color: #5d5c61;
+  --secondary-color: #f8f5f0;
+  --accent-color: #b1a296;
+  --text-color: #4a4a4a;
+  --heading-color: #2c3e50;
   --white: #ffffff;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --transition: all 0.2s ease-in-out;
+  --off-white: #f9f7f3;
+  --light-gray: #e8e6e1;
+  --dark-gray: #333333;
+  --gold: #c0a080;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease-in-out;
   --border-radius: 0.5rem;
+  --border: 1px solid #e0dcd5;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
@@ -55,8 +60,12 @@ p {
 body {
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--white);
+  background-color: var(--off-white);
   color: var(--text-color);
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -68,12 +77,13 @@ body {
 /* Header & Navigation */
 #header {
   background-color: var(--white);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow);
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   transition: var(--transition);
+  border-bottom: var(--border);
 }
 
 .navbar {
@@ -87,12 +97,14 @@ body {
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 0.5rem;
+  width: 65px;
+  height: 65px;
+  border-radius: 0.25rem;
   object-fit: cover;
-  box-shadow: var(--shadow);
   transition: var(--transition);
+  padding: 4px;
+  background: var(--white);
+  border: 1px solid var(--light-gray);
 }
 
 .logo:hover {
