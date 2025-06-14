@@ -6,7 +6,7 @@
       "brand": "Fashion Brand",
       "price": 29.99,
       "rating": 4.5,
-      "image": "/Pics/t-shirt2.webp",
+      "image": "Pics/t-shirt2.webp",
       "description": "A comfortable and stylish white t-shirt made from 100% cotton."
     },
     {
@@ -15,7 +15,7 @@
       "brand": "Denim Co.",
       "price": 79.99,
       "rating": 4.2,
-      "image": "/Pics/fashion 1.jpg",
+      "image": "Pics/fashion%201.jpg",
       "description": "Modern slim fit jeans with a comfortable stretch."
     },
     {
@@ -24,7 +24,7 @@
       "brand": "Urban Style",
       "price": 199.99,
       "rating": 4.8,
-      "image": "/Pics/fashion 2.jpg",
+      "image": "Pics/fashion%202.jpg",
       "description": "Classic leather jacket with modern styling."
     },
     {
@@ -33,7 +33,7 @@
       "brand": "Sport Life",
       "price": 89.99,
       "rating": 4.6,
-      "image": "/Pics/shes.jpg",
+      "image": "Pics/shes.jpg",
       "description": "Lightweight and comfortable running shoes."
     },
     {
@@ -42,7 +42,7 @@
       "brand": "Fashion Brand",
       "price": 59.99,
       "rating": 4.3,
-      "image": "/Pics/fathion4.jpg",
+      "image": "Pics/fathion4.jpg",
       "description": "Elegant summer dress perfect for any occasion."
     },
     {
@@ -51,7 +51,7 @@
       "brand": "Winter Wear",
       "price": 69.99,
       "rating": 4.4,
-      "image": "/Pics/fation 3.jpg",
+      "image": "Pics/fation%203.jpg",
       "description": "Warm and cozy wool sweater for cold weather."
     },
     {
@@ -60,7 +60,7 @@
       "brand": "Time Style",
       "price": 149.99,
       "rating": 4.7,
-      "image": "/Pics/photo-1709033700287-749984cfb735.avif",
+      "image": "Pics/photo-1709033700287-749984cfb735.avif",
       "description": "Stylish casual watch with leather strap."
     },
     {
@@ -69,7 +69,7 @@
       "brand": "Travel Gear",
       "price": 49.99,
       "rating": 4.5,
-      "image": "/Pics/mannequin-312526_640.webp",
+      "image": "Pics/mannequin-312526_640.webp",
       "description": "Durable and spacious backpack for everyday use."
     }
   ]
