@@ -1,12 +1,7 @@
 [build]
   base = ""
   publish = "."
-
-[context.production.environment]
-  NODE_VERSION = "18"
-
-[context.production]
-  command = "npm run build"
+  command = "echo 'Skipping build for static site'"
 
 [context.deploy-preview]
   command = "npm run build"
