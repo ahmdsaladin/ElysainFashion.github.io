@@ -75,9 +75,9 @@ function renderPagination(products) {
  //// fetch the data >....
 function getData() {
   axios
-    .get('./Data/products.json')
+    .get('products.json')
     .then((response) => {
-      allProducts = response.data;
+      allProducts = response.data.products || response.data;
       paginateProducts(currentPage, allProducts);
       renderPagination(allProducts);
     })
