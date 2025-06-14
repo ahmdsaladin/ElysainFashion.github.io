@@ -63,22 +63,15 @@
   </style>
 </head>
 <body>
+  <div id="include-header"></div>
 
-  <section id="header">
-    <a href="#">
-      <img src="./Pics/dh4i7wwrihod1.jpeg" class="logo" alt="" />
-    </a>
+  
 
-    <div>
-      <ul id="navbar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Shop</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Content.html">Content</a></li>
-        <li><a href="Card.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-      </ul>
-    </div>
-  </section>
+
+
+
+
+
 
   <div class="specCard"></div>
 
@@ -151,7 +144,7 @@
     
 
     document.addEventListener("DOMContentLoaded", () => {
-      axios.get("./Data/products.json")
+      axios.get("products.json")
         .then((response) => {
           const allProducts = response.data;
           const proParams = new URLSearchParams(window.location.search);
@@ -169,5 +162,7 @@
         .catch((error) => console.error("Error loading products:", error));
     });
   </script>
+  <div id="include-footer"></div>
+  <script src="main.js"></script>
 </body>
 </html>
