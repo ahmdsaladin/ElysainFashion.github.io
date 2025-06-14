@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your one-stop fashion destination for trendy clothing and accessories" />
-    <meta name="keywords" content="fashion, clothing, accessories, online shopping" />
-    <meta name="author" content="Your Name" />
+    <meta name="description" content="Elysian Fashion - Your premium destination for trendy clothing and accessories" />
+    <meta name="keywords" content="elysian, fashion, clothing, accessories, style, boutique" />
+    <meta name="author" content="Elysian Fashion" />
     <link rel="stylesheet" href="Style.css" />
     <link
       rel="stylesheet"
@@ -21,174 +21,208 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://sliderm.com/dist/1.0.8/sliderm.css">
-    <title>Fashion Store - Your Style Destination</title>
+    <title>Elysian Fashion - Your Premium Style Destination</title>
   </head>
   <body>
-    
-
     <header id="header">
       <nav class="navbar">
-        <a href="#" class="logo-link">
-          <img src="./Pics/dh4i7wwrihod1.jpeg" class="logo" alt="Store Logo" />
-        </a>
-  
-        <button id="custom-btn" class="menu-toggle" aria-label="Toggle Menu">
-          <i class="fas fa-bars"></i>
-        </button>
-  
+        <div class="logo-container">
+          <a href="index.html" class="logo-link">
+            <img src="./Elysian Fashion Logo 1.png" class="logo" alt="Elysian Fashion Logo" />
+          </a>
+        </div>
+        <div class="nav-controls">
+          <button id="custom-btn" class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button class="close-btn" aria-label="Close Menu">×</button>
+        </div>
         <ul id="navbar" class="nav-menu">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="products.html">Shop</a></li>
           <li><a href="About.html">About</a></li>
-          <li><a href="Content.html">Contact</a></li>
-          <li><a href="Card.html" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></a></li>
-          <button class="close-btn" aria-label="Close Menu">×</button>
+          <li><a href="Contact.html">Contact</a></li>
+          <li class="cart-item">
+            <a href="Card.html" class="cart-icon">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
-  
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const toggleBtn = document.getElementById('custom-btn');  
-        const nav = document.getElementById('navbar');  
-        const closeBtn = document.querySelector('.close-btn');  
-  
-        toggleBtn.addEventListener('click', () => {
-          nav.classList.toggle('show'); 
-        });
-  
-        closeBtn.addEventListener('click', () => {
-          nav.classList.remove('show'); 
-        });
-      });
-    </script>
- 
-    </section>
-    <section id="hero" class="hero-section">
-      <div class="hero-content">
-        <h4>Trade-in Offer</h4>
-        <h2>Super Value Deal</h2>
-        <h1>On All Products</h1>
-        <p id="gray">Save more with coupons</p>
-        <a href="products.html" class="cta-button">Shop Now</a>
-      </div>
-    </section>
-    
-      
-    </section>
-    <section id="featured-slider" class="section-p1">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h4 class="hero-subtitle">Limited Time Offer</h4>
+          <h1 class="hero-title">Discover Your Style</h1>
+          <p class="hero-description">Premium fashion for every occasion</p>
+          <a href="products.html" class="cta-button">Shop Now</a>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="Pics/3-Sisters-Boutique-CREDIT-Chris-Cruz-for-Visit-Alexandria-2-92-medium.jpg" class="d-block w-100 slider" alt="Fashion Collection 1">
+      </section>
+
+      <section id="featured-slider" class="section-p1">
+        <div class="section-header">
+          <h2>Featured Collections</h2>
+          <p>Explore our latest fashion trends</p>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="Pics/sisters2.jpeg" class="d-block w-100 slider" alt="Fashion Collection 2">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Pics/3-Sisters-Boutique-CREDIT-Chris-Cruz-for-Visit-Alexandria-2-92-medium.jpg" class="d-block w-100 slider" alt="Spring Collection">
+              <div class="carousel-caption">
+                <h3>Spring Collection</h3>
+                <p>New arrivals just landed</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Pics/sisters2.jpeg" class="d-block w-100 slider" alt="Summer Essentials">
+              <div class="carousel-caption">
+                <h3>Summer Essentials</h3>
+                <p>Light and comfortable designs</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Pics/sisters3.jpg" class="d-block w-100 slider" alt="Accessories">
+              <div class="carousel-caption">
+                <h3>Accessories</h3>
+                <p>Complete your look</p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="Pics/sisters3.jpg" class="d-block w-100 slider" alt="Fashion Collection 3">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="promo-banner">
+        <div class="banner-content">
+          <h3>Up to 70% Off</h3>
+          <p>On selected items</p>
+          <button type="button" class="btn btn-warning">Shop Sale</button>
+        </div>
+      </section>
+
+      <section class="offers-container">
+        <div class="section-header">
+          <h2>Special Offers</h2>
+          <p>Don't miss our exclusive deals</p>
+        </div>
+        <div class="offer-grid">
+          <div class="offer-card">
+            <div class="offer-image" style="background-image: url('Pics/special-offer.jpg')"></div>
+            <div class="offer-content">
+              <h3>Special Offer</h3>
+              <p>Buy One, Get a Surprise Gift</p>
+              <button type="button" class="btn btn-light">Learn More</button>
+            </div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image" style="background-image: url('Pics/summer-sale.jpg')"></div>
+            <div class="offer-content">
+              <h3>Summer Collection</h3>
+              <p>20% Off Selected Items</p>
+              <button type="button" class="btn btn-success">View Collection</button>
+            </div>
+          </div>
+          <div class="offer-card">
+            <div class="offer-image" style="background-image: url('Pics/season-sale.jpg')"></div>
+            <div class="offer-content">
+              <h3>Season Sale</h3>
+              <p>24-Hour Flash Sale</p>
+              <button type="button" class="btn btn-success">Shop Now</button>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-    <section id="banner" class="promo-banner">
-      <div class="text">
-        <p class="services">Repair Service</p>
-        <h3>Up to 70% Off - All T-shirts & Accessories</h3>
-        <button type="button" class="btn btn-warning">Learn More</button>
-      </div>
-    </section>
-    <section class="offers-container">
-      <div class="offer-card background">
-        <h2>Special Offer</h2>
-        <p>Buy One, Get a Surprise Gift</p>
-        <button type="button" class="btn btn-light">Learn More</button>
-      </div>
-      <div class="offer-card background2">
-        <h2>Spring / Summer</h2>
-        <p>The Best Class Dress is on Sale</p>
-        <button type="button" class="btn btn-success">View Collection</button>
-      </div>
-      <div class="offer-card background3">
-        <h2>Season Sales</h2>
-        <p>24-Hour Deal: Don't Miss Out!</p>
-        <button onclick="showtoggle()" type="button" class="btn btn-success">Learn More</button>
-        <p id="none" class="hidden-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat excepturi, fuga, ipsa corporis doloribus, labore distinctio dicta obcaecati eum soluta impedit iusto cum a voluptatem tempora libero consequatur ab in?</p>
-      </div>
-    </section>
-    <section class="newsletter">
-      <div class="newsletter-content">
-        <h2>Sign Up for Free</h2>
-        <p>Get E-mail updates about our latest shop and special offers</p>
-      </div>
-      <div class="newsletter-form">
-        <input type="email" class="searchInput" placeholder="Enter your e-mail" required>
-        <button type="submit" class="btn btn-dark">Sign Up</button>
-      </div>
-    </section>
-    </section>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h2>Join Our Community</h2>
+            <p>Get exclusive updates and special offers</p>
+          </div>
+          <form class="newsletter-form" action="#" method="POST">
+            <input type="email" class="searchInput" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-section">
-          <img src="Pics/dh4i7wwrihod1.jpeg" alt="Store Logo" class="footer-logo" />
-          <p class="footer-text">Contact us for any inquiries or support</p>
-          <div class="footer-contact">
-            <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Style City</p>
-            <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
-            <p><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</p>
+          <div class="footer-header">
+            <img src="./Elysian Fashion Logo 1.png" alt="Elysian Fashion Logo" class="footer-logo" />
+            <p class="footer-text">Your trusted fashion destination since 2025</p>
           </div>
-          <h4>Follow us</h4>
-          <div class="social-icons">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fashion Street, Style City</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+1 234 567 8900</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+          <div class="social-links">
             <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
         <div class="footer-section">
-          <h2>About</h2>
+          <h2>Quick Links</h2>
           <nav class="footer-nav">
-            <a href="#" class="footer-link">About us</a>
-            <a href="#" class="footer-link">Delivery information</a>
-            <a href="#" class="footer-link">Privacy policy</a>
-            <a href="#" class="footer-link">Conditions</a>
-            <a href="#" class="footer-link">Contact us</a>
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Delivery Information</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Contact Us</a>
           </nav>
         </div>
         <div class="footer-section">
-          <h2>Install App</h2>
+          <h2>Download App</h2>
           <div class="store-container">
             <div class="store-box">
               <div class="store-icon">
                 <i class="fa-brands fa-apple"></i>
               </div>
               <div class="store-text">
-                <p class="small-text">Download on the</p>
-                <p class="big-text">App Store</p>
+                <span class="small-text">Download on the</span>
+                <span class="big-text">App Store</span>
               </div>
             </div>
             <div class="store-box">
               <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="play-store-badge" />
             </div>
           </div>
-          <p class="secure-payment">Secured payment Gateways</p>
-          <div class="payment-icons">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="payment-icon" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="payment-icon" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-icon" />
+          <div class="secure-payment">
+            <h4>Secure Payment</h4>
+            <div class="payment-icons">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="payment-icon" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="payment-icon" />
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="payment-icon" />
+            </div>
           </div>
         </div>
       </div>
@@ -196,8 +230,26 @@
         <p>&copy; 2025 Fashion Store. All rights reserved.</p>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('custom-btn');
+        const nav = document.getElementById('navbar');
+        const closeBtn = document.querySelector('.close-btn');
+
+        toggleBtn.addEventListener('click', () => {
+          nav.classList.toggle('show');
+        });
+
+        closeBtn.addEventListener('click', () => {
+          nav.classList.remove('show');
+        });
+      });
+    </script>
+  </body>
+</html>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
