@@ -514,6 +514,16 @@ body {
 /* Components & Sections */
 
 /* Navigation */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-controls {
+  display: none; /* visible only on mobile */
+}
+
 .nav-menu li a {
   display: block;
   padding: 0.5rem 1rem;
@@ -556,6 +566,58 @@ body {
 }
 
 /* Offer Cards */
+
+/* Product Grid */
+.pro-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.pro {
+  background: var(--white);
+  border: 1px solid #e5e7eb;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.pro:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.pro img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.des {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.des span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.starts i {
+  color: var(--accent-color);
+  font-size: 0.8rem;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0.25rem 0 0.5rem;
+}
+
 .offer-card {
   background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
   border-radius: var(--border-radius);
