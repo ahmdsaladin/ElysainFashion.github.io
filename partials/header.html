@@ -45,87 +45,28 @@
 
       <!-- Main Navigation -->
       <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html">Home</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="index.html">Home 1</a>
-              <a class="dropdown-item" href="#">Home 2</a>
-              <a class="dropdown-item" href="#">Home 3</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown mega-menu">
-            <a class="nav-link dropdown-toggle" href="products.html">Shop</a>
-            <div class="mega-menu-content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-3">
-                    <h6>Women's Fashion</h6>
-                    <a href="#">Dresses</a>
-                    <a href="#">Tops & Tees</a>
-                    <a href="#">Jackets & Coats</a>
-                    <a href="#">Pants & Capris</a>
-                    <a href="#">Jeans</a>
-                  </div>
-                  <div class="col-lg-3">
-                    <h6>Men's Fashion</h6>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Shirts</a>
-                    <a href="#">Jeans</a>
-                    <a href="#">Jackets</a>
-                    <a href="#">Suits & Blazers</a>
-                  </div>
-                  <div class="col-lg-3">
-                    <h6>Accessories</h6>
-                    <a href="#">Bags & Wallets</a>
-                    <a href="#">Jewelry</a>
-                    <a href="#">Watches</a>
-                    <a href="#">Sunglasses</a>
-                    <a href="#">Belts</a>
-                  </div>
-                  <div class="col-lg-3">
-                    <div class="mega-menu-banner">
-                      <img src="https://via.placeholder.com/300x200" alt="Special Offer" class="img-fluid rounded">
-                      <div class="mega-menu-banner-content">
-                        <h5>Summer Collection</h5>
-                        <p>Up to 30% Off</p>
-                        <a href="#" class="btn btn-sm btn-outline-light mt-2">Shop Now</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Contact.html">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
         </ul>
-
         <!-- Header Icons -->
         <div class="header-icons">
-          <div class="search-box">
-            <button class="search-btn"><i class="fas fa-search"></i></button>
-            <div class="search-form">
-              <form action="#" method="get">
-                <input type="text" placeholder="Search products..." name="search">
-                <button type="submit"><i class="fas fa-search"></i></button>
-              </form>
-            </div>
-          </div>
-          <a href="#" class="header-icon wishlist-icon">
-            <i class="far fa-heart"></i>
-            <span class="badge">3</span>
+          <a href="#" class="header-icon">
+            <i class="fas fa-search"></i>
           </a>
-          <a href="Card.html" class="header-icon cart-icon">
-            <i class="fas fa-shopping-bag"></i>
-            <span class="badge cart-count">0</span>
+          <a href="#" class="header-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
           </a>
         </div>
       </div>
@@ -134,24 +75,15 @@
 </header>
 
 <!-- Mobile Menu -->
-<div class="mobile-menu-overlay"></div>
 <nav class="mobile-menu">
   <div class="mobile-menu-header">
     <h5>Menu</h5>
     <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
   </div>
-  <ul class="mobile-menu-nav">
-    <li class="has-dropdown">
-      <a href="#">Home <i class="fas fa-chevron-down"></i></a>
-      <ul class="dropdown">
-        <li><a href="index.html">Home 1</a></li>
-        <li><a href="#">Home 2</a></li>
-        <li><a href="#">Home 3</a></li>
-      </ul>
-    </li>
-    <li class="has-dropdown">
-      <a href="products.html">Shop <i class="fas fa-chevron-down"></i></a>
-      <ul class="dropdown">
+  <ul class="mobile-menu-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
         <li><a href="#">Women's Fashion</a></li>
         <li><a href="#">Men's Fashion</a></li>
         <li><a href="#">Accessories</a></li>
