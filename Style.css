@@ -80,27 +80,7 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Header & Navigation */
-#header {
-  background-color: var(--white);
-  box-shadow: var(--shadow);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 0.8rem 0;
-  transition: var(--transition);
-  border-bottom: var(--border);
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1400px;
-  margin-inline: auto;
-  padding-inline: 1rem;
-}
+/* Header styles are in header.css */
 
 .logo {
   width: 65px;

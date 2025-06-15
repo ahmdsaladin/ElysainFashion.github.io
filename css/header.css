@@ -66,11 +66,12 @@
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
   transition: var(--transition);
   z-index: 1000;
-}
-
-#header.sticky-top {
   position: sticky;
   top: 0;
+}
+
+/* Remove the sticky-top class styling since we're handling it directly */
+#header.sticky-top {
   animation: slideDown 0.5s;
 }
 
