@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 3,
         name: 'Leather Handbag',
         price: 149.99,
-        image: 'Pics/fashion-hanger-clothes-logo-design-vector-43403429.jpg',
+        image: '../Pics/fashion-hanger-clothes-logo-design-vector-43403429.jpg',
         category: 'Accessories',
         rating: 4.8,
         reviews: 67
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 4,
         name: 'Elegant Evening Gown',
         price: 299.99,
-        image: 'Pics/depositphotos_392159684-stock-photo-portrait-of-cheerful-girl-choosing.jpg',
+        image: '../Pics/depositphotos_392159684-stock-photo-portrait-of-cheerful-girl-choosing.jpg',
         category: 'Dresses',
         rating: 4.7,
         reviews: 92
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 5,
         name: 'Casual T-Shirt',
         price: 49.99,
-        image: 'Pics/fathion4.jpg',
+        image: '../Pics/fathion4.jpg',
         category: 'Tops',
         rating: 4.3,
         reviews: 156
