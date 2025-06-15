@@ -82,6 +82,42 @@ body {
 
 /* Header styles are in header.css */
 
+/* About Page Styles */
+.whoWeAre {
+  padding: 5rem 0;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-sections {
+  margin-top: 2rem;
+}
+
+.about-section {
+  padding: 1.5rem;
+  border-left: 4px solid var(--gold);
+  background-color: var(--off-white);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.about-section h3 {
+  color: var(--heading-color);
+  font-family: 'Playfair Display', serif;
+}
+
+.about-section p {
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+@media (max-width: 991.98px) {
+  .whoWeAre {
+    padding: 3rem 0;
+  }
+}
+
 .logo {
   width: 65px;
   height: 65px;
