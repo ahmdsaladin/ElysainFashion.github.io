@@ -118,6 +118,45 @@ body {
   }
 }
 
+/* Product Card Styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card .badge {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 0.75rem;
+}
+
+.card .btn {
+  transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: translateY(-2px);
+}
+
+.card .text-muted {
+  font-size: 0.875rem;
+}
+
 .logo {
   width: 65px;
   height: 65px;
